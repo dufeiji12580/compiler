@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1399688321 source:e:\program files\compiler\lexicalfunc.cpp
+	<iostream>
+	"LexicalAnalyzer.h"
+	"ConstDefine.h"
+	"ErrorDefine.h"
+
+1398215538 e:\program files\compiler\lexicalanalyzer.h
+	<string>
+	<vector>
+
+1399688142 e:\program files\compiler\constdefine.h
+
+1398215709 e:\program files\compiler\errordefine.h
+
+1400489723 source:e:\program files\compiler\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<conio.h>
+	<stdlib.h>
+	"LexicalAnalyzer.h"
+	"ParseAnalyzer.h"
+
+1400488444 e:\program files\compiler\parseanalyzer.h
+	<string>
+	<vector>
+	<fstream>
+	<stack>
+	"ConstDefine.h"
+	"LexicalAnalyzer.h"
+
+1398215862 e:\program files\compiler\semanticanalyzer.h
+	"LexicalAnalyzer.h"
+	"ConstDefine.h"
+
+1400488120 source:e:\program files\compiler\parsefunc.cpp
+	<fstream>
+	<iostream>
+	<conio.h>
+	<stdlib.h>
+	<string>
+	"ParseAnalyzer.h"
+	"ConstDefine.h"
+	"ErrorDefine.h"
+
+1398215891 source:e:\program files\compiler\semanticfunc.cpp
+	<iostream>
+	"ParseAnalyzer.h"
+	"ConstDefine.h"
+	"ErrorDefine.h"
+	"SemanticAnalyzer.h"
+

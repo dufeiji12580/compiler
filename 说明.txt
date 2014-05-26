@@ -1,0 +1,8 @@
+lex.txt 为输出的单词序列
+action.txt 为action表和goto表
+production.txt 为产生式
+lalr.txt 为工具生成的lalr表，供程序读取
+out.txt 为语法分析输出的归约过程
+LexicalFunc.cpp为词法分析的程序
+ParseFunc.cpp为语法和语义分析的程序
+asm.asm为生成的汇编代码

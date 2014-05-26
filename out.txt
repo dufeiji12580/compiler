@@ -1,0 +1,414 @@
+main
+(
+)
+{
+int
+score
+[
+6
+]
+init_array_left => ID LS_BRAC DIG 
+=
+{
+76
+,
+initializer_list => DIG 
+82
+,
+initializer_list => initializer_list COMMA DIG 
+90
+,
+initializer_list => initializer_list COMMA DIG 
+86
+,
+initializer_list => initializer_list COMMA DIG 
+79
+,
+initializer_list => initializer_list COMMA DIG 
+62
+}
+initializer_list => initializer_list COMMA DIG 
+;
+array_initializer => LB_BRAC initializer_list RB_BRAC 
+init_declarator => init_array_left RS_BRAC EQ array_initializer 
+init_declarator_list => init_declarator 
+int
+declaration => INT init_declarator_list SEMIC 
+statement => declaration 
+credit
+[
+6
+]
+init_array_left => ID LS_BRAC DIG 
+=
+{
+2
+,
+initializer_list => DIG 
+2
+,
+initializer_list => initializer_list COMMA DIG 
+1
+,
+initializer_list => initializer_list COMMA DIG 
+2
+,
+initializer_list => initializer_list COMMA DIG 
+2
+,
+initializer_list => initializer_list COMMA DIG 
+3
+}
+initializer_list => initializer_list COMMA DIG 
+;
+array_initializer => LB_BRAC initializer_list RB_BRAC 
+init_declarator => init_array_left RS_BRAC EQ array_initializer 
+init_declarator_list => init_declarator 
+int
+declaration => INT init_declarator_list SEMIC 
+statement => declaration 
+mean
+,
+init_declarator => ID 
+init_declarator_list => init_declarator 
+sum
+,
+init_declarator => ID 
+init_declarator_list => init_declarator_list COMMA init_declarator 
+temp
+,
+init_declarator => ID 
+init_declarator_list => init_declarator_list COMMA init_declarator 
+i
+;
+init_declarator => ID 
+init_declarator_list => init_declarator_list COMMA init_declarator 
+temp
+declaration => INT init_declarator_list SEMIC 
+statement => declaration 
+=
+primary_expression => ID 
+0
+;
+postfix_expression => DIG 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+assignment_expression => primary_expression EQ additive_expression 
+expression => assignment_expression 
+sum
+statement => expression SEMIC 
+=
+primary_expression => ID 
+0
+;
+postfix_expression => DIG 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+assignment_expression => primary_expression EQ additive_expression 
+expression => assignment_expression 
+for
+statement => expression SEMIC 
+(
+i
+=
+primary_expression => ID 
+0
+;
+postfix_expression => DIG 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+assignment_expression => primary_expression EQ additive_expression 
+expression => assignment_expression 
+i
+F => 
+<
+primary_expression => ID 
+postfix_expression => primary_expression 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+relational_expression => additive_expression 
+6
+;
+postfix_expression => DIG 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+relational_expression => relational_expression LT additive_expression 
+logical_AND_expression => relational_expression 
+logical_OR_expression => logical_AND_expression 
+assignment_expression => logical_OR_expression 
+expression => assignment_expression 
+i
+G => 
+++
+primary_expression => ID 
+)
+postfix_expression => primary_expression PLUSPLUS 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+relational_expression => additive_expression 
+logical_AND_expression => relational_expression 
+logical_OR_expression => logical_AND_expression 
+assignment_expression => logical_OR_expression 
+expression => assignment_expression 
+H => 
+{
+sum
+=
+primary_expression => ID 
+sum
++
+primary_expression => ID 
+postfix_expression => primary_expression 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+score
+[
+i
+]
+primary_expression => ID 
+postfix_expression => primary_expression 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+relational_expression => additive_expression 
+logical_AND_expression => relational_expression 
+logical_OR_expression => logical_AND_expression 
+assignment_expression => logical_OR_expression 
+expression => assignment_expression 
+*
+primary_expression => ID LS_BRAC expression RS_BRAC 
+postfix_expression => primary_expression 
+multiplication_expression => postfix_expression 
+credit
+[
+i
+]
+primary_expression => ID 
+postfix_expression => primary_expression 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+relational_expression => additive_expression 
+logical_AND_expression => relational_expression 
+logical_OR_expression => logical_AND_expression 
+assignment_expression => logical_OR_expression 
+expression => assignment_expression 
+;
+primary_expression => ID LS_BRAC expression RS_BRAC 
+postfix_expression => primary_expression 
+multiplication_expression => multiplication_expression MULTI postfix_expression 
+additive_expression => additive_expression PLUS multiplication_expression 
+assignment_expression => primary_expression EQ additive_expression 
+expression => assignment_expression 
+}
+statement => expression SEMIC 
+block_item_list => statement 
+while
+compound_statement => LB_BRAC block_item_list RB_BRAC 
+for_statement => FOR LR_BRAC expression SEMIC F expression SEMIC G expression H RR_BRAC compound_statement 
+statement => for_statement 
+(
+i
+D => 
+!=
+primary_expression => ID 
+postfix_expression => primary_expression 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+relational_expression => additive_expression 
+0
+)
+postfix_expression => DIG 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+relational_expression => relational_expression NEQ additive_expression 
+logical_AND_expression => relational_expression 
+logical_OR_expression => logical_AND_expression 
+assignment_expression => logical_OR_expression 
+expression => assignment_expression 
+{
+E => 
+temp
+=
+primary_expression => ID 
+temp
++
+primary_expression => ID 
+postfix_expression => primary_expression 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+credit
+[
+i
+-
+primary_expression => ID 
+postfix_expression => primary_expression 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+1
+]
+postfix_expression => DIG 
+multiplication_expression => postfix_expression 
+additive_expression => additive_expression MINUS multiplication_expression 
+relational_expression => additive_expression 
+logical_AND_expression => relational_expression 
+logical_OR_expression => logical_AND_expression 
+assignment_expression => logical_OR_expression 
+expression => assignment_expression 
+;
+primary_expression => ID LS_BRAC expression RS_BRAC 
+postfix_expression => primary_expression 
+multiplication_expression => postfix_expression 
+additive_expression => additive_expression PLUS multiplication_expression 
+assignment_expression => primary_expression EQ additive_expression 
+expression => assignment_expression 
+i
+statement => expression SEMIC 
+--
+primary_expression => ID 
+;
+postfix_expression => primary_expression MINUSMINUS 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+relational_expression => additive_expression 
+logical_AND_expression => relational_expression 
+logical_OR_expression => logical_AND_expression 
+assignment_expression => logical_OR_expression 
+expression => assignment_expression 
+}
+statement => expression SEMIC 
+block_item_list => statement 
+block_item_list => statement block_item_list 
+mean
+compound_statement => LB_BRAC block_item_list RB_BRAC 
+while_statement => WHILE LR_BRAC D expression RR_BRAC E compound_statement 
+statement => while_statement 
+=
+primary_expression => ID 
+sum
+/
+primary_expression => ID 
+postfix_expression => primary_expression 
+multiplication_expression => postfix_expression 
+temp
+;
+primary_expression => ID 
+postfix_expression => primary_expression 
+multiplication_expression => multiplication_expression DIV postfix_expression 
+additive_expression => multiplication_expression 
+assignment_expression => primary_expression EQ additive_expression 
+expression => assignment_expression 
+if
+statement => expression SEMIC 
+(
+mean
+>=
+primary_expression => ID 
+postfix_expression => primary_expression 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+relational_expression => additive_expression 
+60
+)
+postfix_expression => DIG 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+relational_expression => relational_expression RQ additive_expression 
+logical_AND_expression => relational_expression 
+logical_OR_expression => logical_AND_expression 
+assignment_expression => logical_OR_expression 
+expression => assignment_expression 
+{
+A => 
+mean
+=
+primary_expression => ID 
+mean
+-
+primary_expression => ID 
+postfix_expression => primary_expression 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+60
+;
+postfix_expression => DIG 
+multiplication_expression => postfix_expression 
+additive_expression => additive_expression MINUS multiplication_expression 
+assignment_expression => primary_expression EQ additive_expression 
+expression => assignment_expression 
+printf
+statement => expression SEMIC 
+(
+"
+Your score is %d higher than 60!\n
+"
+,
+string_literal => DQ_MARKS STR DQ_MARKS 
+mean
+)
+primary_expression => ID 
+postfix_expression => primary_expression 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+out_paralist => additive_expression 
+;
+}
+out_statement => PRINT LR_BRAC string_literal COMMA out_paralist RR_BRAC SEMIC 
+statement => out_statement 
+block_item_list => statement 
+block_item_list => statement block_item_list 
+else
+compound_statement => LB_BRAC block_item_list RB_BRAC 
+B => 
+{
+C => 
+mean
+=
+primary_expression => ID 
+60
+-
+postfix_expression => DIG 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+mean
+;
+primary_expression => ID 
+postfix_expression => primary_expression 
+multiplication_expression => postfix_expression 
+additive_expression => additive_expression MINUS multiplication_expression 
+assignment_expression => primary_expression EQ additive_expression 
+expression => assignment_expression 
+printf
+statement => expression SEMIC 
+(
+"
+Your score is %d lower than 60!\n!\n
+"
+,
+string_literal => DQ_MARKS STR DQ_MARKS 
+mean
+)
+primary_expression => ID 
+postfix_expression => primary_expression 
+multiplication_expression => postfix_expression 
+additive_expression => multiplication_expression 
+out_paralist => additive_expression 
+;
+}
+out_statement => PRINT LR_BRAC string_literal COMMA out_paralist RR_BRAC SEMIC 
+statement => out_statement 
+block_item_list => statement 
+block_item_list => statement block_item_list 
+}
+compound_statement => LB_BRAC block_item_list RB_BRAC 
+if_statement => IF LR_BRAC expression RR_BRAC A compound_statement B ELSE C compound_statement 
+statement => if_statement 
+block_item_list => statement 
+block_item_list => statement block_item_list 
+block_item_list => statement block_item_list 
+block_item_list => statement block_item_list 
+block_item_list => statement block_item_list 
+block_item_list => statement block_item_list 
+block_item_list => statement block_item_list 
+block_item_list => statement block_item_list 
+block_item_list => statement block_item_list 
+start => MAIN LR_BRAC RR_BRAC LB_BRAC block_item_list RB_BRAC 
+........................success..........................
